@@ -1,0 +1,51 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7700, #000000,#bb00ff); 
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    background-color:blue;
+    padding: 150px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+#clock {
+    font-size: 100px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+#message {
+    font-size: 100px;
+    color: #000000;
+}
+
+
+#card:hover {
+    transform: scale(1.03);
+}
+
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+
+#card[style*="yellow"] {
+    animation: blink 0.3s ease-in-out 3; 
+}
